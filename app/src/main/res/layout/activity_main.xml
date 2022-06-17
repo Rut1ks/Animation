@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView android:id="@+id/imgvw"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@mipmap/kotika"/>
+
+    <Button
+        android:id="@+id/btnRClk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgvw"
+        android:layout_marginTop="96dp"
+        android:text="По часовой"
+        app:layout_constraintTop_toBottomOf="@+id/imgvw"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnRAClk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnRClk"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toRightOf="@+id/btnRClk"
+        android:text="Против часовой"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvw" />
+
+    <Button
+        android:id="@+id/btnFadeIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgvw"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="Появится"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRAClk" />
+
+    <Button
+        android:id="@+id/btnFadeOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnFadeIn"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/btnFadeIn"
+        android:text="Исчезнуть"
+        app:layout_constraintTop_toBottomOf="@+id/btnRClk"
+        tools:layout_editor_absoluteX="14dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
